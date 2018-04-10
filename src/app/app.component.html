@@ -1,9 +1,18 @@
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
-    <p>
-    	Get good by getting boosted
-    </p>
+    Get good by getting boosted
   </h1>
 </div>
 
+<div class="ui three buttons">
+  <button (click)="showInfo()"
+          class="ui button">Who are we</button>
+  <button (click)="showSchedule()"
+  		  class="ui button">Schedule</button>
+  <button (click)="showContact()"
+  		  class="ui button">Contact us</button>
+</div>
+<div class="window">
+	<p> {{text}} </p>
+</div>

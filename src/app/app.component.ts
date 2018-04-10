@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Boosting Party';
+  text;
+  showInfo() {
+    this.text = "info";
+  }
+  showContact(){
+    this.text = "contact us";
+  }
+  showSchedule(){
+    this.text = "Schedule";
+  }
 }
